@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+
+
+
+{% block body %}
+
+<div class="recipes">
+
+
+    {% for recipe in recipes%}
+    <div>
+
+        <img src="https://spoonacular.com/recipeImages/{{ recipe.id }}-556x370.jpg" alt="recipe image">
+        <p>"{{ recipe.title }}</p>
+
+    </div>
+    {%endfor%}
+    <!-- TODO: For each gif, include the 'gif.html' template to display it -->
+    {%endblock%}
+
+</div>
+
+
+
